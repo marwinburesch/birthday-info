@@ -1,4 +1,5 @@
 import { createEnterBirthdayPage } from "./lib/enterBirthdayPage.js";
+import { createFooterComponent } from "./lib/footerComponent.js";
 import { createTitleComponent } from "./lib/titleComponent.js";
 
 // Declare a function to create the elements and logic inside the #app element
@@ -8,6 +9,9 @@ function createApp() {
 
   // Create title component
   const titleComponent = createTitleComponent();
+
+  // Create footer component
+  const footerComponent = createFooterComponent();
 
   // Append the titleComponent to the app
   appElement.append(titleComponent);
@@ -23,6 +27,7 @@ function createApp() {
 
   // Append the inputPage to the app
   appElement.append(enterBirthdayPage);
+  appElement.append(footerComponent);
 }
 
 // Run the createApp function
