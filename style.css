@@ -41,3 +41,12 @@ h5 {
   align-content: center;
   justify-items: center;
 }
+.submitButton {
+  color: rgb(0, 0, 0);
+  background-color: var(--color-primary);
+  border-radius: 1rem;
+}
+.imputArea {
+  display: grid;
+  gap: 0.5rem;
+}
