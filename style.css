@@ -24,6 +24,7 @@ body {
   font-family: var(--font-family);
   color: var(--color-text);
   background-color: var(--color-background);
+  margin: 0;
 }
 
 h1,
@@ -38,6 +39,7 @@ h5 {
   height: 100vh;
   overflow: auto;
   display: grid;
+  grid-template-rows: 30% auto;
   align-content: center;
   justify-items: center;
 }
@@ -52,4 +54,22 @@ h5 {
 .form {
   display: grid;
   gap: 0.7em;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  background-image: linear-gradient(#e81224, #e81224);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 0%;
+  transition: background-size 0.5s, color 0.5s;
+}
+
+.footer:hover {
+  user-select: none;
+  color: black;
+  background-size: 100% 100%;
 }
